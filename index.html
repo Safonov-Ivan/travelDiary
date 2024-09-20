@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Travel diary</title>
+  </head>
+  <body>
+    <h1>Дневник путешествий</h1>
+
+    <form id="travel-form">
+      <label for="country">Выберите страну:</label>
+      <select id="country" required></select>
+
+      <label for="date">Введите дату:</label>
+      <input type="date" id="date" required />
+
+      <label for="message">Сообщение:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Создать запись</button>
+    </form>
+
+    <div id="posts"></div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
